@@ -25,11 +25,8 @@
 function domContentLoaded() {
 	document.addEventListener("DOMContentLoaded", updateDOM);
 }
+
 function updateDOM() {
     // do something again
-    if (document.querySelector('p').textContent == "This is really cool!"){
-    	document.querySelector('p').textContent = "JavaScript is so cool. It lets me add text to my page programmatically.";
-    }else if (document.querySelector('p').textContent == "JavaScript is so cool. It lets me add text to my page programmatically."){
-    	document.querySelector('p').textContent = "This is really cool!";
-    }
+    document.querySelector('p').textContent = "This is really cool!";
 }
